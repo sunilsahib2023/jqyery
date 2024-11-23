@@ -1,1 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+@keyframes ani1
+{
+from{transform:rotateY(0deg) scale(1) }
+to{transform:rotateY(180deg) scale(2)  }
+}
+@keyframes ani2
+{
+from{transform:rotateY(-180deg)  scale(1) }
+to{transform:rotateY(0deg)  scale(2) }
+}
 
+#box{
+    width:500px;
+    height:500px;
+    background:black;
+    margin:auto;
+    text-align:center;
+    perspective:350px;
+  
+}
+
+ #one
+{
+    width:200px;
+    height:200px;
+    background:yellow;
+    position:relative;
+    left:30%;
+    top:30%;
+    background-image:url(images/m1.jpg);
+    background-size:cover;
+    backface-visibility: hidden;
+   animation:ani1 5s infinite alternate;
+}
+#two
+{
+    width:200px;
+    height:200px;
+    background:red;
+    position:relative;
+    left:30%;
+    top:-10%;
+    background-image:url(images/m2.jpeg);
+    background-size:cover;
+    backface-visibility: hidden;
+    animation:ani2 5s infinite alternate;
+}
+</style>
+
+<body>
+    <div id="box">
+
+        <div id="one">one</div>
+        <div id="two">Two</div>
+
+    </div>
+<script>
+var d1 = document.getElementById("one")
+var d2 = document.getElementById("two")
+var yr = "-180"
+
+d2.onclick=function()
+{
+d2.style.cursor="pointer"
+d2.style.transition="12s"
+yr+=0.52
+
+//d1.style.transform="rotateY(0degdeg)  scale(0)"
+d1.style.animation = "ani1 5s infinite alternate"
+d2.style.animation = "ani2 5s infinite  alternate"
+
+}
+</script>
+    
+</body>
+</html>
