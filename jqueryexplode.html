@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#mypic
+{
+  display:block;
+  width:200px; 
+  height:200px; 
+  margin:auto;
+  box-shadow:10px 10px 10px gray;
+  cursor:pointer;
+ }
+#box{
+   width:200px;
+   height:230px;
+  position:absolute;
+   top:10px;
+   background:rgb(178, 11, 215);
+   text-decoration:underline;
+   font-weight:bolder;
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
+
+<body>
+
+    <img src="images/m2.jpeg" id="mypic">
+    <div id="box">
+    <button id="b1">Click To  check 
+    </button>
+    <br>
+    <h1>Color Animation</h1>
+    </div>
+<script>
+$(document).ready(function(){
+//$("*").hide(2000)
+var options = { to: { width: 200, height: 260 } }
+    $("#b1").click(function(){
+       
+        //$("#mypic").effect("explode",,1000)
+       // $("#mypic").toggle("explode",{pieces:100},1000);
+       //$("#mypic").toggle("bounce", {times:7},2000 );
+      //   $("#mypic").effect("explode",,1000)
+      //$("#mypic").effect("puff",1000)
+      //$("#mypic").effect("puff",1000)
+      //$( "#mypic" ).toggle("pulsate",{times:10},6000);
+     //  $("#mypic").toggle({ effect: "scale", direction: "verticlal",percent:52 ,origin:"middle"});
+     //$("#mypic").toggle({ effect:"scale",  direction: "verticlal",percent:52 ,origin:"middle"});
+    //$("#mypic" ).effect( "size",{to:{ width: 300, height: 50 }}, 1000 );
+    /*
+    
+    $("#mypic").toggle("clip",{direction:"vertical"},1200);
+    $("#mypic").toggle("clip",{direction:"horizontal"},1200);
+    $("#mypic").toggle("clip",{direction:"up"},1200);
+    */  /*  
+        $( "#mypic").toggle( "blind",{direction:"up"},1200);
+        $( "#mypic").toggle( "blind",{direction:"down"},1200);
+        $( "#mypic").toggle( "blind",{direction:"left"},1200);
+        $( "#mypic").toggle( "blind",{direction:"right"},1200);
+        $( "#mypic").toggle( "blind",{direction:"vertical"},1200);
+        $( "#mypic").toggle( "blind",{direction:"horizontal"},1200);
+        $("#box").animate({color: "green",backgroundColor: "rgb( 20, 20, 20 )" });
+        */
+/*
+$("#box").animate({textDecorationColor: "white",backgroundColor: "black" })
+$("#box").animate({textEmphasisColor: "yellow",backgroundColor: "red" })
+$("#box").animate({outlineColor: "yellow",backgroundColor: "black" })
+*/
+/*
+ $( "#mypic").toggle( "drop",{direction:"up"}).delay(2000);
+ $( "#mypic").toggle( "drop",{direction:"down"}).delay(2000);
+ $( "#mypic").toggle( "drop",{direction:"left"}).delay(2000);;
+ $( "#mypic").toggle( "drop",{direction:"right"});
+ $( "#mypic" ).toggle( "fold" );
+ $( "#mypic" ).toggle( "fold",{size:4} );
+  
+    $( "#mypic").toggle( "blind" );
+    $( "#mypic").toggle( "blind" );
+    $( "#mypic").toggle( "blind" ); 
+    $( "#mypic").toggle( "blind" );
+    $( "#mypic" ).toggle("puff" )
+    $( "#mypic" ).toggle("puff" ,{percent:150})
+  
+  */
+
+
+})
+
+
+//$("#mypic").toggle("blind",{size:3} );
+
+/*
+$("#mypic").hide( "drop", { direction: "right" }, "slow" );
+$("#mypic").show( "drop", { direction: "up" }, "slow" );
+$("#mypic").hide( "drop", { direction: "left" }, "slow" );
+$("#mypic").show( "drop", { direction: "down" }, "slow" );
+
+$("#mypic").show( "drop", { direction: "down" }, "slow" )
+$( "#box" ).toggle( "highlight" )
+$( "#mypic" ).toggle( "highlight" )
+$("#mypic" ).toggle( "scale",{origin:"middle",direction : "horizontal"},2000);
+$("#mypic" ).toggle( "scale",{origin:"center",direction : "vertical"},2000);
+*/
+
+//$("#mypic" ).toggle( "scale",{percent:12,origin:"center",direction : "vertical"},2000);
+//$("#mypic" ).toggle( "scale",{percent:48,origin:"center",direction : "vertical"},2000);
+//$("#mypic" ).toggle( "scale",{percent:48,origin:"center",direction : "horizental"},2000);
+//$("#mypic" ).toggle( "scale",{scale:"box",percent:48,origin:"center",direction : "horizental"},2000);
+//$( "#mypic" ).effect( "shake" );
+//$( "#mypic" ).toggle( "shake" );
+//$( "#mypic" ).effect( "shake" ,{direction:"left",distance:12,times:10});
+//$("#mypic" ).effect( "scale",{scale:"box",percent:48,origin:"center",direction : "horizental"},2000);
+//$( "#mypic" ).effect( "shake" ,{direction:"left",distance:32,times:10});
+//$( "#mypic").effect("size",{to: {origin:"top", width: 700, height: 60 }}, 1000 )
+
+//$( "#mypic").effect("size",{to: {origin:"top", width: 700, height: 60 }}, 1000 )
+//$( "#mypic").effect("size",{to: {origin:"left", width: 700, height: 60 }}, 1000 )
+//$("#mypic" ).effect("slide" );
+//$("#mypic" ).effect("slide",{direction:"up"} );
+//$("#mypic" ).effect("slide",{direction:"down"} );
+//$("#mypic" ).effect("slide",{direction:"left"} );
+//$("#mypic" ).effect("slide",{direction:"right"} );
+//$("#mypic" ).effect("slide",{direction:"left",distance:110} );
+//$("#mypic" ).draggable()
+//$("#mypic" ).draggable()
+//$( "#mypic" ).draggable({grid: [50, 50 ]});
+//$( "#mypic" ).draggable({ cursor: "crosshair"});
+// for animation
+//https://www.jquerycards.com/forms/drag-drop/uploader/
+
+
+
+
+
+
+})
+
+</script>
+    
+</body>
+</html>

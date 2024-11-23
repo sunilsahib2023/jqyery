@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#mypic
+{
+  display:block;
+  width:200px; 
+  height:200px; 
+  margin:auto;
+  box-shadow:10px 10px 10px gray;
+  cursor:pointer;
+ }
+#box{
+   width:200px;
+   height:230px;
+  position:absolute;
+   top:10px;
+   background:rgb(178, 11, 215);
+   text-decoration:underline;
+   font-weight:bolder;
+}
+
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+<script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
+
+<body>
+
+    <img src="images/m2.jpeg" id="mypic">
+    <div id="box">
+    <button id="b1">Click To  check 
+    </button>
+    <br>
+    <h1>Color Animation</h1>
+    </div>
+<script>
+
+$(document).ready(function()
+{
+//$("*").hide(2000)
+   $("#b1").click(function()
+   {
+       
+        //$("#mypic").toggle("explode",{pieces:140})
+        $("#mypic").draggable();
+
+
+    }) 
+
+})
+
+</script>
+    
+</body>
+</html>

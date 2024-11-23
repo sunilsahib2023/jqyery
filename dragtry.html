@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#myslider
+{
+    width:80%;
+    height:600px;
+    margin:auto;
+    box-shadow:10px 10px 10px gray;
+   // background:red;
+}
+
+.pic
+{
+    width:20%;
+    height:120px;
+    box-shadow:10px 10px 10px gray;
+    cursor:grab;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="jquery.cycle2.min.js"></script>
+
+<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+<style>
+    #box{background:rgb(10, 197, 69);width:5%;height:50px;
+    cursor:pointer;
+    }
+    #box2{background:red;width:5%;height:50px;
+    cursor:pointer;
+    }
+.mystyle
+{
+    background:red;width:5%;height:50px;
+    cursor:pointer;
+    text-align:center;padding:10px;box-shadow:10px 10px 10px rgb(12, 12, 12);
+    position:absolute;top:0px;left:100px;
+    border-radius:90px;
+}
+
+</style>
+
+
+<body>
+    
+    
+   <div id="box">Green</div>
+   <div id="box2">Red</div>
+      <script>
+        var r,g,b,c
+    for(var i = 0;i<110;i++)
+        {
+           r = Math.round(Math.random()*255)
+           g = Math.round(Math.random()*255)
+           b = Math.round(Math.random()*255)
+           c = "rgb("+r+","+g+","+b+")"
+
+         var ob = new Array()
+         ob[i] = document.createElement("div")
+         document.body.appendChild(ob[i])
+         ob[i].innerHTML=i
+         ob[i].classList.add("mystyle")
+         ob[i].style.background = c
+         ob[i].style.top = Math.random()*200+"px"
+         ob[i].style.left = Math.random()*200+"px"
+        }
+    
+    
+   
+   
+   $(document).ready(function()
+        {
+
+            d = document.querySelectorAll("div")
+            //alert(d.length)
+            
+              for(var i = 0; i<d.length;i++)
+                  {
+                   $(d[i]).draggable();
+                   
+                   $(d[i]).dblclick(function()
+                   {
+                    $(this).hide(1000)
+                   })
+
+                   $("html").keydown(function(event)
+                   {
+                   // $(d[i]).style.transform="rotate(360deg)"
+                    //alert(event.keyCode)
+                       if(event.keyCode==32)
+                        {
+                            alert("sp")
+                            
+                            aler(this.style)
+                        }
+                   })
+                
+                }
+
+
+/*
+            $(function() {
+            $( "#box" ).draggable();
+            $( "#box2" ).draggable();
+            
+            $("#box2").click(function () {
+               $(this).clone().insertAfter(this);
+            });
+
+    
+  } );
+   */
+    
+        })
+
+
+
+    
+         
+    </script>
+
+    
+
+
+
+
+</body>
+</html>

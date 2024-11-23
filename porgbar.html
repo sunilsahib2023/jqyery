@@ -1,0 +1,45 @@
+<!DOCTYPE html><html lang="en"><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>jQuery UI Progressbar - Default functionality</title>
+  
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.13.3/themes/base/jquery-ui.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/ui/1.13.3/jquery-ui.min.js" integrity="sha256-sw0iNNXmOJbQhYFuC9OF2kOlD5KQKe1y5lfBn4C9Sjg=" crossorigin="anonymous"></script>
+    <style>
+       #myprog
+       {
+      background:red;
+       }
+    </style>
+   
+    <script>
+
+  var c = 1
+    $( function() 
+    {
+
+     t = setInterval(function(){c++;document.title = c
+
+        $("#myprog").progressbar({value:c});
+        if(c>100){clearInterval(t)}
+     },100)
+
+   
+
+  
+
+
+  });
+    </script>
+  </head>
+  <body>
+   
+  <div id="myprog"></div>
+  
+  <div id="slider"></div>
+   
+   
+   
+   
+  </body></html>

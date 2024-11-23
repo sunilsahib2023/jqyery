@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<style>
+  #product1,#product2,#product3,#product4
+  {
+  width:100%;
+  height:15px;
+  box-shadow:10px 10px 10px rgb(11, 10, 10);
+padding:20px;  
+cursor:pointer;
+border-top:2px rgb(2, 0, 0) ridge;
+  }
+  
+  .textdata
+         {
+            padding:40px;
+            text-align:justify;
+            font-size:15px;
+            box-shadow:10px 10px 10px gray;
+            margin:20px;
+            
+
+         }
+</style>
+
+
+<body>
+    <script>
+        $(document).ready(function()
+           {
+            //$("*").hide(2000)
+              $("#product1").click(function() 
+                  { $("#product1sub").slideToggle()
+
+                  $("#product2sub").slideUp()
+                  $("#product3sub").slideUp()
+                  $("#product4sub").slideUp()
+                   
+                  })
+
+
+
+
+                  
+                  $("#product2").click(function() 
+                  { $("#product2sub").slideToggle()
+                  $("#product1sub").slideUp()
+                  $("#product3sub").slideUp()
+                  $("#product4sub").slideUp()
+
+
+
+                   })
+             
+                  $("#product3").click(function() 
+                  { $("#product3sub").slideToggle()
+
+                  $("#product1sub").slideUp()
+                  $("#product2sub").slideUp()
+                  $("#product4sub").slideUp()
+                    
+                   })
+
+
+                  $("#product4").click(function() 
+                  { $("#product4sub").slideToggle() 
+
+
+                  $("#product2sub").slideUp()
+                  $("#product3sub").slideUp()
+                  $("#product1sub").slideUp()
+
+
+
+                  })
+
+
+             }) 
+         
+
+
+
+        </script>
+
+
+    
+    <div id="product1"> Product 1   </div>
+    <div id="product1sub"  class="textdata">
+      <p>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam inventore dignissimos delectus consequuntur cum quaerat iste beatae, a laboriosam et molestiae quo sequi aliquam natus odit voluptates ea placeat doloremque.
+       Cupiditate adipisci rerum non eveniet vitae commodi odio perspiciatis doloribus, odit harum nisi ullam quis corrupti distinctio alias perferendis consequuntur obcaecati voluptas! Architecto placeat deleniti ratione perspiciatis exercitationem nam facilis.
+       Dolores id optio quas omnis facere aspernatur repellendus? Animi, quas commodi assumenda maiores sapiente nostrum delectus error adipisci, aspernatur non omnis ducimus magnam tenetur explicabo architecto? Sapiente consectetur nobis minima.
+       Facilis commodi cum totam, velit rerum voluptatibus culpa perferendis ratione eum atque molestias sapiente unde delectus dolorem soluta, qui mollitia, earum pariatur deserunt! Optio quibusdam fugit, culpa eaque dolorum sequi?
+
+      </p>
+   </div>
+<!-- *************block end here *******        -->
+
+
+<div id="product2"> Product 2   </div>
+    <div id="product2sub"  class="textdata">
+      <p>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam inventore dignissimos delectus consequuntur cum quaerat iste beatae, a laboriosam et molestiae quo sequi aliquam natus odit voluptates ea placeat doloremque.
+       Cupiditate adipisci rerum non eveniet vitae commodi odio perspiciatis doloribus, odit harum nisi ullam quis corrupti distinctio alias perferendis consequuntur obcaecati voluptas! Architecto placeat deleniti ratione perspiciatis exercitationem nam facilis.
+       Dolores id optio quas omnis facere aspernatur repellendus? Animi, quas commodi assumenda maiores sapiente nostrum delectus error adipisci, aspernatur non omnis ducimus magnam tenetur explicabo architecto? Sapiente consectetur nobis minima.
+       Facilis commodi cum totam, velit rerum voluptatibus culpa perferendis ratione eum atque molestias sapiente unde delectus dolorem soluta, qui mollitia, earum pariatur deserunt! Optio quibusdam fugit, culpa eaque dolorum sequi?
+
+      </p>
+   </div>
+<!-- *************block end here *******        -->
+
+
+<div id="product3"> Product 3   </div>
+    <div id="product3sub"  class="textdata">
+      <p>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam inventore dignissimos delectus consequuntur cum quaerat iste beatae, a laboriosam et molestiae quo sequi aliquam natus odit voluptates ea placeat doloremque.
+       Cupiditate adipisci rerum non eveniet vitae commodi odio perspiciatis doloribus, odit harum nisi ullam quis corrupti distinctio alias perferendis consequuntur obcaecati voluptas! Architecto placeat deleniti ratione perspiciatis exercitationem nam facilis.
+       Dolores id optio quas omnis facere aspernatur repellendus? Animi, quas commodi assumenda maiores sapiente nostrum delectus error adipisci, aspernatur non omnis ducimus magnam tenetur explicabo architecto? Sapiente consectetur nobis minima.
+       Facilis commodi cum totam, velit rerum voluptatibus culpa perferendis ratione eum atque molestias sapiente unde delectus dolorem soluta, qui mollitia, earum pariatur deserunt! Optio quibusdam fugit, culpa eaque dolorum sequi?
+
+      </p>
+   </div>
+<!-- *************block end here *******        -->
+
+<div id="product4"> Product 4   </div>
+    <div id="product4sub"  class="textdata">
+      <p>
+       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam inventore dignissimos delectus consequuntur cum quaerat iste beatae, a laboriosam et molestiae quo sequi aliquam natus odit voluptates ea placeat doloremque.
+       Cupiditate adipisci rerum non eveniet vitae commodi odio perspiciatis doloribus, odit harum nisi ullam quis corrupti distinctio alias perferendis consequuntur obcaecati voluptas! Architecto placeat deleniti ratione perspiciatis exercitationem nam facilis.
+       Dolores id optio quas omnis facere aspernatur repellendus? Animi, quas commodi assumenda maiores sapiente nostrum delectus error adipisci, aspernatur non omnis ducimus magnam tenetur explicabo architecto? Sapiente consectetur nobis minima.
+       Facilis commodi cum totam, velit rerum voluptatibus culpa perferendis ratione eum atque molestias sapiente unde delectus dolorem soluta, qui mollitia, earum pariatur deserunt! Optio quibusdam fugit, culpa eaque dolorum sequi?
+
+      </p>
+   </div>
+<!-- *************block end here *******        -->
+
+
+
+
+
+</body>
+</html>

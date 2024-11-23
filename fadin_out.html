@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<style>
+
+#container
+{
+width: 100%;
+border:0px solid black;
+display:flex;
+flex-direction:row;
+flex-wrap: wrap;
+column-gap: 140px;
+}
+.card
+{
+text-align:center;    
+width:20%;
+border:1px black solid;
+margin:2px;
+padding:20px;
+cursor:pointer;
+box-shadow:10px 10px 10px gray;
+}
+
+.card img
+{
+width:100%;  
+height:340px;  
+}
+
+</style>
+
+
+</head>
+<body>
+    <h1>Fade in/out in Jquery </h1>
+
+<div id="container">
+
+<!-- Card -->
+
+<div id="c1" class="card">
+    Blue T-shirts <br/><br/>
+<img src="images/p24.jpeg">
+<br/>
+<p style="text-align:center">
+Price : Rs1400 <br/>
+Quantity :1<br/>
+size : M S L  Xl XXl<br/><br/>
+<button>Add To Cart</button>
+</p>
+
+</div>
+
+<!-- Card -->
+
+<div id="c1" class="card">
+    Blue T-shirts <br/><br/>
+<img src="images/p24.jpeg">
+<br/>
+<p style="text-align:center">
+Price : Rs1400 <br/>
+Quantity :1<br/>
+size : M S L  Xl XXl<br/><br/>
+<button>Add To Cart</button>
+</p>
+
+</div>
+<!-- Card -->
+
+<div id="c1" class="card">
+    Blue T-shirts <br/><br/>
+<img src="images/p24.jpeg">
+<br/>
+<p style="text-align:center">
+Price : Rs1400 <br/>
+Quantity :1<br/>
+size : M S L  Xl XXl<br/><br/>
+<button>Add To Cart</button>
+</p>
+
+</div>
+<!-- Card -->
+
+<div id="c1" class="card">
+    Blue T-shirts <br/><br/>
+<img src="images/p24.jpeg">
+<br/>
+<p style="text-align:center">
+Price : Rs1400 <br/>
+Quantity :1<br/>
+size : M S L  Xl XXl<br/><br/>
+<button>Add To Cart</button>
+</p>
+
+</div>
+<!-- Card -->
+
+<div id="c1" class="card">
+    Blue T-shirts <br/><br/>
+<img src="images/p24.jpeg">
+<br/>
+<p style="text-align:center">
+Price : Rs1400 <br/>
+Quantity :1<br/>
+size : M S L  Xl XXl<br/><br/>
+<button>Add To Cart</button>
+</p>
+
+</div>
+<!-- Card -->
+
+<div id="c1" class="card">
+    Blue T-shirts <br/><br/>
+<img src="images/p24.jpeg">
+<br/>
+<p style="text-align:center">
+Price : Rs1400 <br/>
+Quantity :1<br/>
+size : M S L  Xl XXl<br/><br/>
+<button>Add To Cart</button>
+</p>
+
+</div>
+
+
+
+
+</div>
+
+
+<script>
+  $(document).ready(function()
+    {
+    $(".card").fadeTo(200,0.2)
+    
+        $   (".card").mouseover(function()
+             {
+            $(this).fadeTo(0,0.99)
+
+             })
+
+
+
+        $(".card").mouseout(function()
+        {
+            $(this).fadeTo(0,0.2)
+        })
+
+
+    })
+
+
+
+
+
+
+    </script>
+    
+</body>
+</html>

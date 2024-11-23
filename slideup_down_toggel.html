@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<style>
+  
+  #main
+  {
+    background:rgb(9, 1, 1);
+    width:150px;
+    padding-top:10px;
+    box-shadow:10px 10px 10px gray;
+    display:none;
+  }
+.m
+{
+   margin:auto; 
+list-style:none;
+padding:0px;
+text-align:center;
+width:150px;
+transition:2s;
+}
+.m li
+{
+    margin-top:1px;
+    padding:10px;
+
+}
+.m  li:hover
+{
+    transition:2s;
+    background:#30aaa1;
+    color:black;
+}
+
+
+.m a:link
+{
+text-decoration:none; 
+color:white;   
+}
+
+.m a:visited
+{
+text-decoration:none;    
+color:white;
+text-align:left;
+
+}
+
+#productsub,#datasub
+{
+  position:absolute;
+  list-style:none;
+  left:158px;
+  background:black;
+  padding:0px;
+  color:white;
+  display:none;
+}
+
+</style>
+
+
+<body>
+    <script>
+        $(document).ready(function()
+          {
+            $("#mymenu").click(function()
+                 {
+                 $("#main").slideToggle()
+
+                }); 
+
+        
+            
+        $("#product").click(function()
+          {
+            $("#productsub").slideToggle()
+            $("#datasub").hide(1000)
+            
+           })
+
+           $("#data").click(function()
+          {
+            $("#datasub").slideToggle()
+            $("#productsub").slideUp(1000)
+            
+           })
+                  
+                   
+          }) 
+
+
+
+
+        </script>
+
+
+    
+    <button id="mymenu">Menu</button>
+
+    <div id="main">
+    <ol class="m">
+        <li><a href="#">Home</a></li>
+        <li><a id="product" href="#">Product</a>
+           
+          <ol id="productsub">
+            <li>Home Appliance</li>
+            <li>Detergent</li>
+            <li>Oil</li>
+            <li>Dye</li>
+          </ol>
+
+        
+        </li>
+
+
+
+        <li><a href="#">Services</a></li>
+
+        <li><a id="data" href="#">Data</a>
+        <ol id="datasub">
+            <li>Book Data</li>
+            <li>Electronic Item</li>
+            <li>Hardware</li>
+            <li>Employee</li>
+        </ol>
+               
+        </li>
+
+
+
+        <li><a href="#">Photo Gallery</a></li>
+        <li><a href="#">Contact</a></li>
+   </ol>
+</div>
+</body>
+</html>

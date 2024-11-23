@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+#myslider
+{
+    width:80%;
+    height:600px;
+    margin:auto;
+    box-shadow:10px 10px 10px gray;
+   // background:red;
+}
+
+.pic
+{
+    width:100%;
+    height:600px;
+}
+</style>
+
+<script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+<script src="jquery.cycle2.min.js"></script>
+
+
+
+<!--
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/plugin/jquery.cycle2.tile.min.js" integrity="sha512-+eKRAsOLfVra4fqf5ab0rvd/cqO73yb1KAn3xfcO5w/tjHRF2DpZiQqsHdkmBNG4hv1Op4Fv0lBh1b/hijOBVA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.cycle2/2.1.6/jquery.cycle2.flip.min.js" integrity="sha512-CMNU4FyGzWKtMKeVbzV4+cxGAfjqMv1LVUexutr7Dy1X0JdqhNnBgePfYB0Ea+EoBE17QzEEkyhEQIjmx+Iiuw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+-->
+<!--
+https://cdnjs.com/libraries/jquery.cycle2
+-->
+<body>
+
+    <script>
+        $(document).ready(function()
+        {
+            //$("*").hide(1000)
+            //$("#myslider").cycle()
+     /*
+    $('#myslider').cycle({
+   fx:'tileBlind',
+    speed: 600,
+   timeout:1000,
+   delay: 0
+    });
+   */
+/*
+   $('#myslider').cycle({
+   fx:'tileSlide',
+    speed: 600,
+   timeout:1000,
+   delay: 0
+    });
+*/
+/*
+$('#myslider').cycle({
+   fx:'flipVert',
+    speed: 600,
+   timeout:1000,
+   delay: 0
+    });
+*/
+/*
+    $('#myslider').cycle({
+   fx:'flipHorz',
+    speed: 600,
+   timeout:1000,
+   delay: 0
+    });
+           
+        })
+    */
+
+
+    $.fn.cycle.transitions.pinch = function($cont, $slides, opts) {
+    var $el = $($slides[0]);
+    var w = $el.width();
+    var h = $el.height();
+    opts.cssBefore = { top: 0, left: 0, width: 0, height: 0, zIndex: 1 };
+    opts.animIn    = { width: w, height: h };
+    opts.animOut   = { top: h, left: w, width: 0, height: 0 };
+    opts.cssAfter  = { zIndex: 0 };
+};
+
+
+
+    $('#myslider').cycle({
+   fx:'shuffle',
+    speed: 600,
+   timeout:1000,
+   delay: 0
+    });
+          
+        })
+
+
+
+
+
+
+         
+    </script>
+  <div id="myslider">
+
+    <img src="images/p1.jpg"  class="pic">
+    <img src="images/p2.jpg"  class="pic">
+    <img src="images/p3.jpg"  class="pic">
+    <img src="images/p4.jpg"  class="pic">
+    <img src="images/p5.jpg"  class="pic">
+    <img src="images/p6.jpg"  class="pic">
+
+
+    </div>
+
+
+</body>
+</html>

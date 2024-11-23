@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+</head>
+
+
+<style>
+div{transition:2s;}
+li{list-style:none;background:#1f7a7a;
+width:40%;padding:20px;
+text-align:center;
+border-bottom:2px black solid;
+box-shadow:10px 10px 10px gray;
+margin-left:-40px;
+margin-top:-16px;
+}
+li:hover{
+background:#29a3a3;
+}
+a:link{color:white;}
+a:visited{color:white;}
+
+.picstyle{
+width:20%;
+height:300px;
+box-shadow:10px 10px 10px gray;
+}
+
+</style>
+
+
+
+<body id="main" >
+<h1>Jquery Show/hide on Event </h1>
+    
+
+
+<div style="cursor:pointer;text-align:center;width:20%;background:#1f7a7a;
+"><button  style="cursor:pointer"id="p1">Click to view Picure</button></div>
+<div id="d1">
+<img src="images/p1.jpg" class="picstyle">
+</div>
+
+
+<div style="cursor:pointer;text-align:center;width:20%;background:#1f7a7a;
+"><button  style="cursor:pointer"id="p2">Click to view Picure</button></div>
+<div id="d2">
+<img src="images/p2.jpg" class="picstyle">
+</div>
+
+<div style="cursor:pointer;text-align:center;width:20%;background:#1f7a7a;
+"><button  style="cursor:pointer"id="p3">Click to view Picure</button></div>
+<div id="d3">
+<img src="images/p3.jpg" class="picstyle">
+</div>
+
+<div style="cursor:pointer;text-align:center;width:20%;background:#1f7a7a;
+"><button  style="cursor:pointer"id="p4">Click to view Picure</button></div>
+<div id="d4">
+<img src="images/p4.jpg" class="picstyle">
+</div>
+
+
+
+
+
+
+<script>
+
+$(document).ready(function()
+{
+
+	$("#d1").hide()
+	$("#d2").hide()
+	$("#d3").hide()
+	$("#d4").hide()
+
+
+
+	
+
+$("#p1").click(function(){$("#d1").fadeToggle(500);});
+
+$("#p2").click(function(){$("#d2").fadeToggle(500);});
+$("#p3").click(function(){$("#d3").fadeToggle(500);});
+$("#p4").click(function(){$("#d4").fadeToggle(500);});
+
+
+
+
+
+
+
+});
+</script></body></html>
